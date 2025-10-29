@@ -471,3 +471,113 @@
 [2025-10-29 18:51:12] INFO  com.apitest.utils.RestUtils - Response status: 200
 [2025-10-29 18:51:12] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Authors/0
 [2025-10-29 18:51:12] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:26] INFO  com.apitest.tests.BooksApiTest - Testing GET all books
+[2025-10-29 19:31:26] INFO  com.apitest.tests.BooksApiTest - Testing GET book by ID
+[2025-10-29 19:31:26] INFO  com.apitest.tests.BooksApiTest - Creating new book
+[2025-10-29 19:31:26] INFO  com.apitest.utils.RestUtils - GET /api/v1/Books
+[2025-10-29 19:31:26] INFO  com.apitest.utils.RestUtils - GET /api/v1/Books/1
+[2025-10-29 19:31:26] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=The Art of Software Testing, description=A comprehensive guide to software testing practices and methodologies, pageCount=432, excerpt=This book covers various testing techniques and best practices..., publishDate=2024-01-15T00:00:00)
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Created book with ID: 0
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Retrieved book: Book 1
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing with negative ID
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - GET /api/v1/Books/-1
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Updating book
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - PUT /api/v1/Books/0 - body: Book(id=0, title=The Art of Software Testing - Updated Edition, description=An updated comprehensive guide to software testing, pageCount=500, excerpt=This updated edition includes new chapters on modern testing practices..., publishDate=2024-02-20T00:00:00)
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Retrieved 200 books
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing non-existent book
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - GET /api/v1/Books/99999
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Updated book with ID: 0
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Deleting book
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing update non-existent book
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - PUT /api/v1/Books/99999 - body: Book(id=null, title=Non-existent Book, description=This book doesn't exist, pageCount=100, excerpt=null, publishDate=2024-01-01T00:00:00)
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing delete non-existent book
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/99999
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - GET /api/v1/Books/0
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing with minimal data
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=Minimal Book, description=null, pageCount=null, excerpt=null, publishDate=null)
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Deleted book with ID: 0
+[2025-10-29 19:31:27] INFO  com.apitest.tests.BooksApiTest - Testing special characters
+[2025-10-29 19:31:27] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=Test Book: Special Characters! @#$%^&*(), description=Testing with special characters, pageCount=100, excerpt=null, publishDate=null)
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.tests.BooksApiTest - Testing partial update
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=Original Title, description=Original Description, pageCount=200, excerpt=null, publishDate=null)
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - PUT /api/v1/Books/0 - body: Book(id=0, title=Updated Title, description=null, pageCount=null, excerpt=null, publishDate=null)
+[2025-10-29 19:31:28] INFO  com.apitest.tests.BooksApiTest - Testing data-driven: Valid book
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=As I Lay Dying, description=Et dolores cumque quod., pageCount=675, excerpt=Laborum nobis quod rerum labore omnis quibusdam a. Sit earum voluptas qui sapiente. Magni sint occaecati dolor inventore quaerat., publishDate=2025-10-20T00:00)
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:28] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:29] INFO  com.apitest.tests.BooksApiTest - Testing data-driven: Book with special characters
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=Test Book: Special Chars! @#$%^&*(), description=Description with special chars, pageCount=508, excerpt=null, publishDate=null)
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:29] INFO  com.apitest.tests.BooksApiTest - Testing data-driven: Minimal book
+[2025-10-29 19:31:29] INFO  com.apitest.utils.RestUtils - POST /api/v1/Books - body: Book(id=null, title=All Passion Spent, description=null, pageCount=null, excerpt=null, publishDate=null)
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Books/0
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Creating new author
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Testing GET all authors
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Testing GET author by ID
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - GET /api/v1/Authors
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - GET /api/v1/Authors/1
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - POST /api/v1/Authors - body: Author(id=null, idBook=1, firstName=John, lastName=Doe)
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Retrieved author: First Name 1 Last Name 1
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Created author with ID: 0
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Testing with negative ID
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - GET /api/v1/Authors/-1
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Updating author
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - PUT /api/v1/Authors/0 - body: Author(id=0, idBook=1, firstName=Jane, lastName=Smith)
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Retrieved 613 authors
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Testing non-existent author
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - GET /api/v1/Authors/99999
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Testing update non-existent author
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - PUT /api/v1/Authors/99999 - body: Author(id=null, idBook=1, firstName=Non-existent, lastName=Author)
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Successfully updated author with ID: 0
+[2025-10-29 19:31:30] INFO  com.apitest.tests.AuthorsApiTest - Deleting author
+[2025-10-29 19:31:30] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Authors/0
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:31] INFO  com.apitest.tests.AuthorsApiTest - Testing delete non-existent author
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Authors/99999
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - GET /api/v1/Authors/0
+[2025-10-29 19:31:31] INFO  com.apitest.tests.AuthorsApiTest - Testing with minimal data
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - POST /api/v1/Authors - body: Author(id=null, idBook=null, firstName=Minimal, lastName=Author)
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.tests.AuthorsApiTest - Testing special characters
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - POST /api/v1/Authors - body: Author(id=null, idBook=1, firstName=José, lastName=O'Connor-Smith)
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Authors/0
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 404
+[2025-10-29 19:31:31] INFO  com.apitest.tests.AuthorsApiTest - Deleted author with ID: 0
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - DELETE /api/v1/Authors/0
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200
+[2025-10-29 19:31:31] INFO  com.apitest.utils.RestUtils - Response status: 200

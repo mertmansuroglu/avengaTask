@@ -103,18 +103,19 @@ From GitHub Actions: download the artifact from Actions tab.
 
 ## Test Coverage
 
-### Books API (12 tests)
+### Books API (15 tests)
 - GET all books, GET by ID
 - POST create, PUT update, DELETE
 - Invalid ID, non-existent resource
 - Minimal data, special characters
-- Data-driven tests
+- Partial update
+- Data-driven tests (3 test cases)
 
 ### Authors API (11 tests)
 - Full CRUD operations
 - Edge cases, data validation
 
-**Total**: 23 tests
+**Total**: 26 tests
 
 ## CI/CD
 
