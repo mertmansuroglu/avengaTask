@@ -1,0 +1,14 @@
+target/
+.git/
+.gitignore
+logs/
+test-output/
+*.log
+.DS_Store
+.idea/
+*.iml
+*.class
+node_modules/
+*.md
+!README.md
+

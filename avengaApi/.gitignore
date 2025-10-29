@@ -1,0 +1,8 @@
+target/
+test-output/
+logs/
+*.log
+.DS_Store
+*.html
+src/main/resources/config/*.properties
+

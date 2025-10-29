@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Authors Array",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": { "type": ["integer", "null"] },
+      "idBook": { "type": ["integer", "null"] },
+      "firstName": { "type": ["string", "null"] },
+      "lastName": { "type": ["string", "null"] }
+    }
+  }
+}
+

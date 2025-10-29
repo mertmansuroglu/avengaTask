@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  api-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bookstore-api-tests:latest
+    environment:
+      - BASE_URL=https://fakerestapi.azurewebsites.net
+      - ENV=docker-compose
+      - USERNAME=default_user
+      - PASSWORD=default_pass
+      - API_KEY=default_key
+    volumes:
+      - ./test-output:/app/test-output
+      - ./logs:/app/logs
+    container_name: bookstore-api-automation-tests
+    restart: on-failure
+
